@@ -10,7 +10,7 @@ let informacion = function(evento) {
   let posicionHorizontal = (coordenadaX > tamanoX /2) ? "Derecha" : "Izquierda";
   let posicionVertical = (coordenadaY > tamanoY /2) ? "Abajo" : "Arriba";
 
-  muestraInformacion(['Posición: ('+posicionHorizontal+","+posicionVertical+")"];
+  muestraInformacion(['Posición: ('+posicionHorizontal+","+posicionVertical+")"]);
 }
 
 let muestraInformacion = function(mensaje) {
