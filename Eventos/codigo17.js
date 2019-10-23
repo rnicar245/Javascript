@@ -1,9 +1,9 @@
 function limita(elEvento, maximoCaracteres) {
-  var elemento = document.getElementById("texto");
+  let elemento = document.getElementById("texto");
 
   // Obtener la tecla pulsada
-  var evento = elEvento || window.event;
-  var codigoCaracter = evento.charCode;
+  let evento = elEvento || window.event;
+  let codigoCaracter = evento.charCode;
   console.log(codigoCaracter);
   // Permitir utilizar las teclas con flecha horizontal
   if(codigoCaracter == "ArrowLeft" || codigoCaracter == "ArrowRight") {
@@ -23,8 +23,8 @@ function limita(elEvento, maximoCaracteres) {
 }
 
 function actualizaInfo(maximoCaracteres) {
-  var elemento = document.getElementById("texto");
-  var info = document.getElementById("info");
+  let elemento = document.getElementById("texto");
+  let info = document.getElementById("info");
 
   if(elemento.value.length >= maximoCaracteres ) {
     info.innerHTML = "Máximo "+maximoCaracteres+" caracteres";
