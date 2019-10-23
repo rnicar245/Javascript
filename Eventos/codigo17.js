@@ -2,7 +2,7 @@ function limita(elEvento, maximoCaracteres) {
   let elemento = document.getElementById("texto");
 
   // Obtener la tecla pulsada
-  let evento = elEvento || window.event;
+  let evento = elEvento;
   let codigoCaracter = evento.charCode;
   console.log(codigoCaracter);
   // Permitir utilizar las teclas con flecha horizontal
