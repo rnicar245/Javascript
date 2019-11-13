@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<title>Arrays 8</title>
+
+<script src="./array8.js"></script>
+<link href="cssArray.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<noscript>
+  <p>Para ver la página correctamente, por favor, active JavaScript</p>
+</noscript>
+<p>
+  Array.forEach() recorre cada elemento del array, invocando una función por cada uno que encuentra.<br>Ejemplo<br><br>
+  array = [1,2,3,4];<br>
+  array.forEach(function(element,index){<br>
+    console.log("array["+indice+"] = "+elemento+");<br>
+  });<br><br>Resultado</p>
+<div id ="resultado1"></div>
+<p>
+  Array.every() recorre cada elemento del array y devuelve true si todos los elementos cumplen la condición de la función que se le pasa por parámetro.<br>
+  Ejemplo<br><br>
+  array = [1,2,3,"cuatro"];<br>
+  array.every(function(elemento){<br>
+    return !isNaN(elemento);<br>
+  });<br><br>Resultado</p>
+<div id ="resultado2"></div>
+
+<p>
+    Array.some() recorre cada elemento del array y devuelve true al menos uno de los elementos cumplen la condición de la función que se le pasa por parámetro.<br>
+    Ejemplo<br><br>
+    array = [1,2,3,"cuatro"];<br>
+    array.some(function(elemento){<br>
+      return !isNaN(elemento);<br>
+    });<br><br>Resultado</p>
+<div id ="resultado3"></div>
+
+<div id ="resultado4"></div>
+</body>
+</html>
