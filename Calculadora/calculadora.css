@@ -1,0 +1,8 @@
+#calculadora{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5%;
+}
+
+input{
+    text-align: right;
+}
